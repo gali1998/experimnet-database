@@ -1,0 +1,25 @@
+{
+  "name": "experimnet-database",
+  "version": "1.0.0",
+  "description": "experimnet-database",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gali1998/experimnet-database.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gali1998/experimnet-database/issues"
+  },
+  "homepage": "https://github.com/gali1998/experimnet-database#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.8"
+  }
+}
