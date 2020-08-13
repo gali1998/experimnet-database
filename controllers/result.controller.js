@@ -3,16 +3,16 @@ const Result = require('../models/result.model.js');
 // Create and Save a new Note
 exports.create = (req, res) => {
      // Validate request
-     if(!req.body.results) {
+     if(!req.body.data.results) {
         return res.status(400).send({
-            message: "Note content can not be empty"
+            message: "empty results"
         });
     }
     
     // Create a Note
     const result = new Result({
-        id: req.body.id || "id missing", 
-        results: req.body.results     
+        id: req.body.data.id || "id missing", 
+        results: req.body.data.results     
     });
 
     console.log(result);
