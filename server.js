@@ -1,4 +1,5 @@
 const express = require('express');
+var cors = require('cors')
 const bodyParser = require('body-parser');
 
 // create express app
@@ -9,6 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 // parse requests of content-type - application/json
 app.use(bodyParser.json())
+app.use(cors())
 
 // Configuring the database
 const dbConfig = require('./config/database.config.js');
